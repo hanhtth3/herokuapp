@@ -10,7 +10,7 @@ import org.jetbrains.annotations.NotNull;
 public class NavigateTo {
     @NotNull
     public static Performable theElements() {
-        return Task.where("{0} .com.baymax.sky.tasks.Elements", actor -> actor.attemptsTo(
+        return Task.where("{0} add the Element.", actor -> actor.attemptsTo(
                 Open.url(Elements.URL),
                 Click.on(Elements.ADD_REMOVE),
                 Click.on(Elements.ADD_ELEMENT)
