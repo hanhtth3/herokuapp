@@ -1,20 +1,18 @@
 package com.baymax.sky.ui;
 
-import net.serenitybdd.annotations.DefaultUrl;
-import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
 public class Elements {
-    public static final Target ADD_REMOVE=
+    public static final Target ADD_REMOVE_MENU =
             Target.the("Add Remove Elements").
                     located(By.linkText("Add/Remove Elements"));
 
-    public static final Target ADD_ELEMENT =
+    public static final Target ADD_ELEMENT_BUTTON =
             Target.the("Add the element").
                     locatedBy("//button[text()='Add Element']");
 
-    public static final Target DELETE=
+    public static final Target DELETE_ELEMENT_BUTTON =
             Target.the("Delete element").
                     locatedBy("//button[@onclick='deleteElement()']");
 

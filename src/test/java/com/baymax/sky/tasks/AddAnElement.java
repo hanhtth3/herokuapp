@@ -6,13 +6,14 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Open;
 import org.jetbrains.annotations.NotNull;
+import com.baymax.sky.tasks.NavigateTo;
 
-public class NavigateTo {
+public class AddAnElement {
     @NotNull
-    public static Performable theElementPage() {
-        return Task.where("{0} navigate to the Element page.", actor -> actor.attemptsTo(
-                Open.url(Elements.URL),
-                Click.on(Elements.ADD_REMOVE_MENU)
+    public static Performable theAddElementButton() {
+        return Task.where("{0} add the Element.", actor -> actor.attemptsTo(
+               NavigateTo.theElementPage(),
+                Click.on(Elements.ADD_ELEMENT_BUTTON)
                 )
         );
     }
