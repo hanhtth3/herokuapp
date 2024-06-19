@@ -10,7 +10,7 @@ public class DeleteAnElement {
     @NotNull
     public static Performable theDeleteElementButton() {
         return Task.where("{0} delete the Element.", actor -> actor.attemptsTo(
-               NavigateTo.theElementPage(),
+               //NavigateTo.theElementPage(),
                 Click.on(Elements.DELETE_ELEMENT_BUTTON)
                 )
         );

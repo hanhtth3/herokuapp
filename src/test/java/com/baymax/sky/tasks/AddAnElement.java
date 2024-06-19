@@ -12,7 +12,7 @@ public class AddAnElement {
     @NotNull
     public static Performable theAddElementButton() {
         return Task.where("{0} add the Element.", actor -> actor.attemptsTo(
-               NavigateTo.theElementPage(),
+              // NavigateTo.theElementPage(),
                 Click.on(Elements.ADD_ELEMENT_BUTTON)
                 )
         );
