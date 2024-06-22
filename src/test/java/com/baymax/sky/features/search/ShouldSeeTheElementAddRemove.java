@@ -21,7 +21,7 @@ public class ShouldSeeTheElementAddRemove extends WebHook {
     public void add_element() {
 
         hanh.attemptsTo(
-                NavigateTo.theElementPage(),
+                NavigateTo.theButtonElementManagement(),
                 AddAnElement.theAddElementButton(),
                 Ensure.that(Elements.DELETE_ELEMENT_BUTTON).isDisplayed()
 
@@ -32,7 +32,7 @@ public class ShouldSeeTheElementAddRemove extends WebHook {
     public void delete_element() {
 
         hanh.attemptsTo(
-                NavigateTo.theElementPage(),
+                NavigateTo.theButtonElementManagement(),
                 AddAnElement.theAddElementButton(),
                 DeleteAnElement.theDeleteElementButton(),
                 Ensure.that(Elements.DELETE_ELEMENT_BUTTON).isNotDisplayed()

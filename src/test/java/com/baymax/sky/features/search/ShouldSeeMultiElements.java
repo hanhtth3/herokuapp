@@ -18,14 +18,13 @@ import  net.serenitybdd.screenplay.Performable;
 @RunWith(SerenityRunner.class)
 public class ShouldSeeMultiElements extends WebHook {
 
-    public static final int countElement;
 
     @WithTag("TC01")
     @Test
     public void add_element() {
 
         hanh.attemptsTo(
-                NavigateTo.theElementPage(),
+                NavigateTo.theButtonElementManagement(),
                 AddAnElement.theAddElementButton(),
                 AddAnElement.theAddElementButton(),
                 AddAnElement.theAddElementButton(),

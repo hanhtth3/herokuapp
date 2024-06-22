@@ -9,11 +9,12 @@ import org.jetbrains.annotations.NotNull;
 
 public class NavigateTo {
     @NotNull
-    public static Performable theElementPage() {
-        return Task.where("{0} navigate to the Element page.", actor -> actor.attemptsTo(
+    public static Performable theButtonElementManagement() {
+        return Task.where("{0} navigate to the button element management.", actor -> actor.attemptsTo(
                 Open.url(Elements.URL),
                 Click.on(Elements.ADD_REMOVE_MENU)
                 )
         );
+
     }
 }
