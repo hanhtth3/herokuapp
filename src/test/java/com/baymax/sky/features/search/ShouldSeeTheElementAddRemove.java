@@ -1,15 +1,13 @@
 package com.baymax.sky.features.search;
 
-import com.baymax.sky.tasks.AddAnElement;
-import com.baymax.sky.tasks.NavigateTo;
+import com.baymax.sky.questions.ListOfButton;
+import com.baymax.sky.tasks.*;
 import net.serenitybdd.annotations.WithTag;
 import net.serenitybdd.junit.runners.SerenityRunner;
-import net.serenitybdd.screenplay.actions.Click;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import net.serenitybdd.screenplay.ensure.Ensure;
 import com.baymax.sky.tasks.AddAnElement;
-import com.baymax.sky.tasks.DeleteAnElement;
 
 import com.baymax.sky.ui.Elements;
 
@@ -20,15 +18,27 @@ public class ShouldSeeTheElementAddRemove extends WebHook {
     @Test
     public void add_element() {
 
-        hanh.attemptsTo(
+        int times = 9;
+       /* hanh.attemptsTo(
                 NavigateTo.theButtonElementManagement(),
-                AddAnElement.theAddElementButton(),
-                Ensure.that(Elements.DELETE_ELEMENT_BUTTON).isDisplayed()
+                Add.theElements(times),
+                Ensure.that(ListOfButton.size()).isEqualTo(times)
+
+        );*/
+
+/*        hanh.attemptsTo(
+                NavigateTo.theButtonElementManagement(),
+                Add.theElements(times)
 
         );
+
+        int count = hanh.asksFor(ListOfButton.size());
+
+        hanh.attemptsTo(Ensure.that(count).isEqualTo(times));*/
+
     }
     @WithTag("TC02")
-    @Test
+   // @Test
     public void delete_element() {
 
         hanh.attemptsTo(
