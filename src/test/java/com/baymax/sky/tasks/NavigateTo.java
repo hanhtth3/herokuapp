@@ -11,10 +11,18 @@ public class NavigateTo {
     @NotNull
     public static Performable theButtonElementManagement() {
         return Task.where("{0} navigate to the button element management.", actor -> actor.attemptsTo(
-                Open.url(Elements.URL),
-                Click.on(Elements.ADD_REMOVE_MENU)
+                        Open.url(Elements.URL),
+                        Click.on(Elements.ADD_REMOVE_MENU)
                 )
         );
-
     }
-}
+    public static Performable theButtonBasicAuthManagement() {
+            return Task.where("{0} navigate to the button basic auth management.", actor -> actor.attemptsTo(
+                            Open.url(Elements.URL),
+                            Click.on(Elements.BASIC_AUTH_MENU)
+                    )
+            );
+
+        }
+    }
+

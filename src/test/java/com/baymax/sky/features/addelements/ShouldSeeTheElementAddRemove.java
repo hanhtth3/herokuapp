@@ -1,4 +1,4 @@
-package com.baymax.sky.features.search;
+package com.baymax.sky.features.addelements;
 
 import com.baymax.sky.questions.ListOfButton;
 import com.baymax.sky.tasks.*;
@@ -26,7 +26,7 @@ public class ShouldSeeTheElementAddRemove extends WebHook {
 
         );*/
 
-/*        hanh.attemptsTo(
+       hanh.attemptsTo(
                 NavigateTo.theButtonElementManagement(),
                 Add.theElements(times)
 
@@ -34,7 +34,7 @@ public class ShouldSeeTheElementAddRemove extends WebHook {
 
         int count = hanh.asksFor(ListOfButton.size());
 
-        hanh.attemptsTo(Ensure.that(count).isEqualTo(times));*/
+        hanh.attemptsTo(Ensure.that(count).isEqualTo(times));
 
     }
     @WithTag("TC02")

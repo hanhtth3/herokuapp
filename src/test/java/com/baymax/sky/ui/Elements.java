@@ -18,4 +18,8 @@ public class Elements {
                     locatedBy("//button[@onclick='deleteElement()']");
 
     public static final String URL="https://the-internet.herokuapp.com/";
+
+    public static final Target BASIC_AUTH_MENU =
+            Target.the("Basic Auth Menu").
+                    located(By.linkText("Basic Auth"));
 }

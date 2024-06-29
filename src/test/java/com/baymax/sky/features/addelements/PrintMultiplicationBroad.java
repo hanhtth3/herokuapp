@@ -1,7 +1,4 @@
-package com.baymax.sky.features.search;
-
-import io.cucumber.java.ja.前提;
-import io.opentelemetry.exporter.logging.SystemOutLogRecordExporter;
+package com.baymax.sky.features.addelements;
 
 public class PrintMultiplicationBroad {
     public static void main(String[] args) {
