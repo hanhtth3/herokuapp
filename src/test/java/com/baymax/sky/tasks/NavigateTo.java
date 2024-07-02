@@ -16,13 +16,5 @@ public class NavigateTo {
                 )
         );
     }
-    public static Performable theButtonBasicAuthManagement() {
-            return Task.where("{0} navigate to the button basic auth management.", actor -> actor.attemptsTo(
-                            Open.url(Elements.URL),
-                            Click.on(Elements.BASIC_AUTH_MENU)
-                    )
-            );
-
-        }
-    }
+}
 
