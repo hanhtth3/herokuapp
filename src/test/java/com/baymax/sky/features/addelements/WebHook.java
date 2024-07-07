@@ -1,4 +1,4 @@
-package com.baymax.sky.features;
+package com.baymax.sky.features.addelements;
 
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.junit.runners.SerenityRunner;
